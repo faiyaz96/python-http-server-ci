@@ -1,0 +1,50 @@
+Started by user [8mha:////4K384HHjPoHOI+BJBO5L6l+AZjFGqboFKUdl0ti4mGMeAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /var/jenkins_home/jobs/spring-boot-hello-world/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/faiyaz96/python-http-server # timeout=10
+Fetching upstream changes from https://github.com/faiyaz96/python-http-server
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/faiyaz96/python-http-server +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c8371262d40116c6f1e3ccac6d1e18d90f85d0ba (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c8371262d40116c6f1e3ccac6d1e18d90f85d0ba
+Commit message: "First commit"
+ > git rev-list --no-walk c8371262d40116c6f1e3ccac6d1e18d90f85d0ba # timeout=10
+[workspace] $ /bin/bash /tmp/jenkins8486252095531008197.sh
+0c73cb8524f6        python-http-server   "/opt/python-http-se…"   About an hour ago   Up About an hour    0.0.0.0:9000->9000/tcp   python-http-server
+python-http-server
+0c73cb8524f6        python-http-server              "/opt/python-http-se…"   About an hour ago   Exited (137) Less than a second ago                         python-http-server
+python-http-server
+python-http-server                   latest              b2c9027d3092        About an hour ago   923MB
+Untagged: python-http-server:latest
+Deleted: sha256:b2c9027d30925a7ac4bd07533658e3bdb365364dd61838f3be0c6c8b710e6819
+Deleted: sha256:14f25e10407d2a41db07a02d676acfa33e0ca3f7f14e06d3985b498e20d816d5
+Deleted: sha256:515f528e54045ff0e85d4c73fce879ad5d73c6a29b1f71f3521379380b7566ca
+Deleted: sha256:62579a61995be402b3b67ccb64f8712e31bcfd67b44685ef9bb9c13b6cc126fa
+Deleted: sha256:1b7d62b0abf5f4589c4d19b65270e5bc3a54261e7b1933328549509916296ecd
+Sending build context to Docker daemon  70.14kB
+Step 1/4 : FROM python
+ ---> 1e80caffd59e
+Step 2/4 : COPY app.py /opt/python-http-server/app.py
+ ---> d42ad706c6b4
+Removing intermediate container e8b833132233
+Step 3/4 : COPY public /opt/python-http-server/public
+ ---> 5db9f5737e22
+Removing intermediate container 94139fd43b35
+Step 4/4 : ENTRYPOINT /opt/python-http-server/app.py
+ ---> Running in ba53ab1f1656
+ ---> 530b8824baa8
+Removing intermediate container ba53ab1f1656
+Successfully built 530b8824baa8
+a9d6bbde2e247670033358c33c880046710c5cfd8cee1e142cfd405163504f60
+"docker network connect" requires exactly 2 arguments.
+See 'docker network connect --help'.
+
+Usage:  docker network connect [OPTIONS] NETWORK CONTAINER
+
+Connect a container to a network
+2018/11/21 16:28:52 [notice] 10#10: signal process started
+Finished: SUCCESS
